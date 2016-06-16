@@ -6,7 +6,7 @@ parameters:
 services:
   app.ldap:
     class: Symfony\Component\Ldap\LdapClient
-    arguments: [ "tlssbcloud61" ]
+    arguments: [ "myhost" ]
 #    service_name:
 #        class: AppBundle\Directory\ClassName
 #        arguments: ["@another_service_name", "plain_value", "%parameter_name%"]
