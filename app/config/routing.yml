@@ -1,0 +1,23 @@
+oc_user:
+    resource: "@OCUserBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
+
+
+
+log:
+  pattern:   /toto
+  defaults:  { _controller: OCUserBundle:Security:login }
+
+login:
+  pattern:   /login
+  defaults:  { _controller: OCUserBundle:Security:login }
+
+login_check:
+  pattern:   /login_check
+
+logout:
+  pattern:   /logout
